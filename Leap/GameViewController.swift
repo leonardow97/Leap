@@ -36,18 +36,28 @@ class GameViewController: UIViewController {
         return true
     }
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        
+        return UIInterfaceOrientationMask.portrait
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
+    
+    func handleApplicationWillResignActive (_ note: Notification) {
+        
+        let skView = self.view as! SKView
+        skView.isPaused = true
+    }
+    
+    func handleApplicationDidBecomeActive (_ note: Notification) {
+        
+        let skView = self.view as! SKView
+        skView.isPaused = false
+    }
+
 
     override var prefersStatusBarHidden: Bool {
         return true

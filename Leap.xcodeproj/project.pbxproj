@@ -17,6 +17,8 @@
 		A793CC761D9C3982000101C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A793CC741D9C3982000101C2 /* LaunchScreen.storyboard */; };
 		A793CC811D9C3983000101C2 /* LeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793CC801D9C3983000101C2 /* LeapTests.swift */; };
 		A793CC8C1D9C3983000101C2 /* LeapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793CC8B1D9C3983000101C2 /* LeapUITests.swift */; };
+		A793CC9A1D9C9344000101C2 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793CC991D9C9344000101C2 /* HomeScene.swift */; };
+		A793CC9E1D9C9456000101C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793CC9D1D9C9456000101C2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A793CC871D9C3983000101C2 /* LeapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A793CC8B1D9C3983000101C2 /* LeapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapUITests.swift; sourceTree = "<group>"; };
 		A793CC8D1D9C3983000101C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A793CC991D9C9344000101C2 /* HomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScene.swift; path = ../HomeScene.swift; sourceTree = "<group>"; };
+		A793CC9D1D9C9456000101C2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				A793CC651D9C3982000101C2 /* AppDelegate.swift */,
+				A793CC9F1D9C945D000101C2 /* Home Scene */,
+				A793CCA01D9C9466000101C2 /* Game Scene */,
 				A793CC671D9C3982000101C2 /* GameScene.sks */,
 				A793CC691D9C3982000101C2 /* Actions.sks */,
-				A793CC6B1D9C3982000101C2 /* GameScene.swift */,
-				A793CC6D1D9C3982000101C2 /* GameViewController.swift */,
 				A793CC6F1D9C3982000101C2 /* Main.storyboard */,
 				A793CC721D9C3982000101C2 /* Assets.xcassets */,
 				A793CC741D9C3982000101C2 /* LaunchScreen.storyboard */,
@@ -132,6 +136,24 @@
 				A793CC8D1D9C3983000101C2 /* Info.plist */,
 			);
 			path = LeapUITests;
+			sourceTree = "<group>";
+		};
+		A793CC9F1D9C945D000101C2 /* Home Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A793CC9D1D9C9456000101C2 /* HomeViewController.swift */,
+				A793CC991D9C9344000101C2 /* HomeScene.swift */,
+			);
+			name = "Home Scene";
+			sourceTree = "<group>";
+		};
+		A793CCA01D9C9466000101C2 /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A793CC6D1D9C3982000101C2 /* GameViewController.swift */,
+				A793CC6B1D9C3982000101C2 /* GameScene.swift */,
+			);
+			name = "Game Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A793CC9E1D9C9456000101C2 /* HomeViewController.swift in Sources */,
 				A793CC6C1D9C3982000101C2 /* GameScene.swift in Sources */,
+				A793CC9A1D9C9344000101C2 /* HomeScene.swift in Sources */,
 				A793CC6E1D9C3982000101C2 /* GameViewController.swift in Sources */,
 				A793CC661D9C3982000101C2 /* AppDelegate.swift in Sources */,
 			);
@@ -524,6 +548,7 @@
 				A793CC921D9C3983000101C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A793CC931D9C3983000101C2 /* Build configuration list for PBXNativeTarget "LeapTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +557,7 @@
 				A793CC951D9C3983000101C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A793CC961D9C3983000101C2 /* Build configuration list for PBXNativeTarget "LeapUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +566,7 @@
 				A793CC981D9C3983000101C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
